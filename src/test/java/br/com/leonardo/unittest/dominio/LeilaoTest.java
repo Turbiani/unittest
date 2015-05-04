@@ -61,8 +61,8 @@ public class LeilaoTest {
 		leilao.propoe(new Lance(billGates, 7000));
 		leilao.propoe(new Lance(stevejobs, 8000));
 		leilao.propoe(new Lance(billGates, 9000));
-		leilao.propoe(new Lance(billGates, 10000));
-		leilao.propoe(new Lance(stevejobs, 11000));
+		leilao.propoe(new Lance(stevejobs, 10000));
+		leilao.propoe(new Lance(billGates, 11000));
 		
 		//deve ser ignorado
 		leilao.propoe(new Lance(stevejobs, 12000));
