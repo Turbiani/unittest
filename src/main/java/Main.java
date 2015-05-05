@@ -20,7 +20,7 @@ public class Main extends HttpServlet {
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
 	
-	resp.getWriter().print("Ola Mundo MARCINHO");
+	resp.getWriter().print("Ola Mundo Jenkins integrado com GitHub e deploy automatico para o Heroku");
   }
 
 
