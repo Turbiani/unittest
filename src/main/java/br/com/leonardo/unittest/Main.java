@@ -1,4 +1,4 @@
-package br.com.leonardo.unittest.server;
+package br.com.leonardo.unittest;
 
 import java.io.IOException;
 
@@ -24,7 +24,7 @@ public class Main extends HttpServlet{
 			context.addServlet(new ServletHolder(new Main()),"/*");
 			server.start();
 			server.join();
-	    
+			
 			System.out.println("Subi na porta " + System.getenv("PORT"));
 	    
 		}catch(Exception e){
