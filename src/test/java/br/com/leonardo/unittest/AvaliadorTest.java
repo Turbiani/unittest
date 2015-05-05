@@ -50,7 +50,8 @@ public class AvaliadorTest {
         assertThat(leiloeiro.getMenorLance(), equalTo(250.0));
         // assertThat(leiloeiro.getMenorLance(), equalTo(250.0));
         //SEM O USO DA BIBLIOTECA HAMCREST
-        assertEquals(400.0, leiloeiro.getMaiorLance(), 0.00001);
+        //assertEquals(400.0, leiloeiro.getMaiorLance(), 0.00001);
+        assertEquals(800.0, leiloeiro.getMaiorLance(), 0.00001);
         assertEquals(250.0, leiloeiro.getMenorLance(), 0.00001);
     }
 	
