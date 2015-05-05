@@ -14,6 +14,10 @@ import br.com.leonardo.unittest.dominio.Lance;
 import br.com.leonardo.unittest.dominio.Leilao;
 import br.com.leonardo.unittest.dominio.Usuario;
 
+/**
+ * @author turbiani
+ *
+ */
 public class AvaliadorTest {
 	
 	private Avaliador leiloeiro;
