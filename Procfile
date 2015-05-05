@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* MainServer
+web:    java -cp target/classes:target/dependency/* Main
