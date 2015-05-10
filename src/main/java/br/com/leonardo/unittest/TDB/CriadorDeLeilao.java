@@ -1,5 +1,7 @@
 package br.com.leonardo.unittest.TDB;
 
+import java.util.Calendar;
+
 import br.com.leonardo.unittest.dominio.Lance;
 import br.com.leonardo.unittest.dominio.Leilao;
 import br.com.leonardo.unittest.dominio.Usuario;
@@ -18,7 +20,12 @@ public class CriadorDeLeilao {
         leilao.propoe(new Lance(usuario, valor));
         return this;
     }
-
+    
+    public CriadorDeLeilao naData(Calendar data){
+    	leilao.setData(data);
+		return this;
+    }
+    
     public Leilao constroi() { 
         return leilao;
     }

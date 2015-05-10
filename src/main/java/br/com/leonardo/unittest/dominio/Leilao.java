@@ -1,6 +1,7 @@
 package br.com.leonardo.unittest.dominio;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
@@ -8,6 +9,8 @@ public class Leilao {
 
 	private String descricao;
 	private List<Lance> lances;
+	private Calendar    data;
+	private boolean     encerrado;
 	
 	public Leilao(String descricao) {
 		this.descricao = descricao;
@@ -43,6 +46,20 @@ public class Leilao {
 		return Collections.unmodifiableList(lances);
 	}
 
+	public void encerra() {
+		this.encerrado = true;
+	}
 	
+	public boolean isEncerrado(){
+		return this.encerrado;
+	}
+
+	public Calendar getData() {
+		return this.data;
+	}
+
+	public void setData(Calendar data){
+		this.data = data;
+	}
 	
 }
