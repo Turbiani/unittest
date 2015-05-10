@@ -38,46 +38,33 @@
 	<dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>9.2.10.v20150310</version>
+      <version>7.6.0.v20120127</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
     </dependency>
 	
   </dependencies>
-  <build>
-  	<finalName>unittest</finalName>
+   <build>
     <plugins>
-     <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-assembly-plugin</artifactId>
-		<version>2.4.1</version>
-		<configuration>
-			<!-- get all project dependencies -->
-			<descriptorRefs>
-				<descriptorRef>jar-with-dependencies</descriptorRef>
-			</descriptorRefs>
-			<!-- MainClass in mainfest make a executable jar -->
-			<archive>
-			  <manifest>
-				<mainClass>br.com.leonardo.unittest.Main</mainClass>
-			  </manifest>
-			</archive>
-
-		</configuration>
-		<executions>
-		  <execution>
-			<id>make-assembly</id>
-                                      <!-- bind to the packaging phase -->
-			<phase>package</phase> 
-			<goals>
-				<goal>single</goal>
-			</goals>
-		  </execution>
-		</executions>
-	  </plugin>	
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
+            <goals><goal>copy-dependencies</goal></goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
