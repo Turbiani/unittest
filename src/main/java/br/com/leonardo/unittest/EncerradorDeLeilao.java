@@ -1,6 +1,5 @@
 package br.com.leonardo.unittest;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -10,10 +9,14 @@ import br.com.leonardo.unittest.dominio.Leilao;
 public class EncerradorDeLeilao {
 	
 	private int total = 0;
+	private LeilaoDAO dao;
 	
+	public EncerradorDeLeilao(LeilaoDAO leilaoDAO) {
+		this.dao = leilaoDAO;
+	}
+
 	public void encerra(){
-		LeilaoDAO dao = new LeilaoDAO();
-		List<Leilao> todosLeiloesCorrentes = new ArrayList<Leilao>();
+		List<Leilao> todosLeiloesCorrentes = dao.correntes();
 		
 		for(Leilao leilao: todosLeiloesCorrentes){
 			if(comecouSemanaPassada(leilao)){
