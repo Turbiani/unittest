@@ -1,26 +1,26 @@
-package br.com.caelum.pm73.dominio;
+package br.com.leonardo.unittest.dominio;
 
 import java.util.Calendar;
 
-import javax.persistence.Entity;
+/*import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.ManyToOne;*/
 
-@Entity
-public class Lance {
+//@Entity
+public class Lance2 {
 
-	@Id @GeneratedValue
+	/*//@Id @GeneratedValue
 	private int id;
 	private double valor;
 	private Calendar data;
-	@ManyToOne
+	//@ManyToOne
 	private Usuario usuario;
-	@ManyToOne
+	//@ManyToOne
 	private Leilao leilao;
 	
-	protected Lance() {}
-	public Lance(Calendar data, Usuario usuario, double valor, Leilao leilao) {
+	protected Lance2() {}
+	public Lance2(Calendar data, Usuario usuario, double valor, Leilao leilao) {
 		this.usuario = usuario;
 		this.data = data;
 		this.valor = valor;
@@ -53,7 +53,7 @@ public class Lance {
 	}
 	public int getId() {
 		return id;
-	}
+	}*/
 	
 	
 }

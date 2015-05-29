@@ -1,18 +1,18 @@
-package br.com.caelum.pm73.dao;
+package br.com.leonardo.unittest.DAO;
 
-import org.hibernate.Session;
+/*import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 
 import br.com.caelum.pm73.dominio.Lance;
 import br.com.caelum.pm73.dominio.Leilao;
-import br.com.caelum.pm73.dominio.Usuario;
+import br.com.caelum.pm73.dominio.Usuario;*/
 
 @SuppressWarnings("deprecation")
 public class CriadorDeSessao {
 
-	private static AnnotationConfiguration config;
+	/*private static AnnotationConfiguration config;
 	private static SessionFactory sf;
 	
 	public Session getSession() {
@@ -37,5 +37,5 @@ public class CriadorDeSessao {
 			.setProperty("hibernate.show_sql", "true");
 		}
 		return config;
-	}
+	}*/
 }

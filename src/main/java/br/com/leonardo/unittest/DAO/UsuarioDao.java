@@ -1,12 +1,12 @@
-package br.com.caelum.pm73.dao;
+package br.com.leonardo.unittest.DAO;
 
-import org.hibernate.Session;
+/*import org.hibernate.Session;
 
-import br.com.caelum.pm73.dominio.Usuario;
+import br.com.caelum.pm73.dominio.Usuario;*/
 
 public class UsuarioDao {
 
-	private final Session session;
+	/*private final Session session;
 
 	public UsuarioDao(Session session) {
 		this.session = session;
@@ -33,5 +33,5 @@ public class UsuarioDao {
 	
 	public void deletar(Usuario usuario) {
 		session.delete(usuario);
-	}
+	}*/
 }

@@ -1,37 +1,37 @@
-package br.com.caelum.pm73.dominio;
+package br.com.leonardo.unittest.dominio;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import javax.persistence.CascadeType;
+/*import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToMany;*/
 
-@Entity
-public class Leilao {
+//@Entity
+public class Leilao2 {
 
-	@Id @GeneratedValue
+	//@Id @GeneratedValue
 	private int id;
 	private String nome;
 	private Double valorInicial;
-	@ManyToOne
-	private Usuario dono;
+	//@ManyToOne
+	private Usuario2 dono;
 	private Calendar dataAbertura;
 	private boolean usado;
 	private boolean encerrado;
-	@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true, mappedBy="leilao")
-	private List<Lance> lances;
+	//@OneToMany(cascade=CascadeType.ALL, orphanRemoval=true, mappedBy="leilao")
+	/*private List<Lance2> lances;
 	
-	public Leilao() {
-		this.lances = new ArrayList<Lance>();
+	public Leilao2() {
+		this.lances = new ArrayList<Lance2>();
 		this.dataAbertura = Calendar.getInstance();
 	}
 	
-	public Leilao(String nome, Double valorInicial, Usuario dono, boolean usado) {
+	public Leilao2(String nome, Double valorInicial, Usuario dono, boolean usado) {
 		this();
 		this.nome = nome;
 		this.valorInicial = valorInicial;
@@ -99,5 +99,5 @@ public class Leilao {
 		lance.setLeilao(this);
 		lances.add(lance);
 		return lance;
-	}
+	}*/
 }

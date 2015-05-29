@@ -1,20 +1,20 @@
-package br.com.caelum.pm73.dominio;
+package br.com.leonardo.unittest.dominio;
 
-import javax.persistence.Entity;
+/*import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.Id;*/
 
-@Entity
-public class Usuario {
+//@Entity
+public class Usuario2 {
 	
-	@Id @GeneratedValue
+	//@Id @GeneratedValue
 	private int id;
 	private String nome;
 	private String email;
 
-	protected Usuario() {}
+	protected Usuario2() {}
 	
-	public Usuario(String nome, String email) {
+	public Usuario2(String nome, String email) {
 		this.nome = nome;
 		this.email = email;
 	}

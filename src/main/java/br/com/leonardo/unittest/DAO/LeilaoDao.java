@@ -1,17 +1,17 @@
-package br.com.caelum.pm73.dao;
+package br.com.leonardo.unittest.DAO;
 
 import java.util.Calendar;
 import java.util.List;
 
-import org.hibernate.Session;
+/*import org.hibernate.Session;
 
 import br.com.caelum.pm73.dominio.Lance;
 import br.com.caelum.pm73.dominio.Leilao;
-import br.com.caelum.pm73.dominio.Usuario;
+import br.com.caelum.pm73.dominio.Usuario;*/
 
 public class LeilaoDao {
 
-	private final Session session;
+	/*private final Session session;
 
 	public LeilaoDao(Session session) {
 		this.session = session;
@@ -97,5 +97,5 @@ public class LeilaoDao {
 											"where lance.usuario = :usuario")
 					.setParameter("usuario", usuario)
 					.uniqueResult();
-	}
+	}*/
 }
