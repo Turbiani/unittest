@@ -2,5 +2,7 @@
 .classpath
 .project
 /target/*
-/target/
-target/*
+/doc/*
+
+
+
