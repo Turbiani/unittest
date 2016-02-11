@@ -20,12 +20,14 @@ public class Main extends HttpServlet {
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
 	
-	resp.getWriter().print("Ola Mundo Jenkins integrado com GitHub e deploy automatico para o Heroku!");
+	resp.getWriter().print("Ola Mundo Buddy integrado com GitHub e deploy automatico para o Heroku!");
   }
 
 
   public static void main(String[] args) throws Exception {
-    Server server = new Server(Integer.valueOf(System.getenv("PORT")));
+    Server server = new Server(Integer.valueOf(
+    		System.getenv("PORT")==null ? "8080" : System.getenv("PORT") 
+    		));
     ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
     context.setContextPath("/");
     server.setHandler(context);
