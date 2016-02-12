@@ -20,7 +20,7 @@ public class Main extends HttpServlet {
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
 	
-	resp.getWriter().print("Ola Mundo Buddy integrado com GitHub e deploy automatico para o Heroku!");
+	resp.getWriter().print("Ola Mundo Buddy integrado com GitHub e deploy automatico para o Heroku! =)");
   }
 
 
