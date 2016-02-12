@@ -18,7 +18,9 @@ public class TesteGeekHunter {
 		//funciona mas sem com formula errada
 		//calculaSn2(3);
 		
-		calculaSn3(1);
+		//calculaSn3(1);
+		
+		System.out.println(calculaSnFinal(5));
 
 		
 	}
@@ -75,6 +77,13 @@ public class TesteGeekHunter {
 			calculaSn2(n);
 		}		
 		
+	}
+	
+	private static int calculaSnFinal(int n){
+		if(n==1) return 2;
+		if(n==2) return 3;
+		
+		return 2*calculaSnFinal(n-1) + 3 * calculaSnFinal(n-2);
 	}
 	
 	
