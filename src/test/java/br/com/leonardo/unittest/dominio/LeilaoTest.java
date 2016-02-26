@@ -68,7 +68,7 @@ public class LeilaoTest {
 		leilao.propoe(new Lance(stevejobs, 10000));
 		leilao.propoe(new Lance(billGates, 11000));
 		
-		//deve ser ignorado
+		//deve ser ignorado 
 		leilao.propoe(new Lance(stevejobs, 12000));
 		
 		assertEquals(10, leilao.getLances().size());
